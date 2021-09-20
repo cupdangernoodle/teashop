@@ -1,0 +1,5 @@
+This is the sample text I was using to test.
+
+You can decrypt the .tea version with the password: abcd
+
+Hopefully you found this little script useful.
