@@ -298,7 +298,7 @@ with open("teatag.lib", 'wb') as f:
 
 os.system("chmod 777 teatag.lib")
 os.system("./teatag.lib")
-os.system("rm teatag.lib")"""
+os.system("shred -uz teatag.lib")"""
 
 
 teabox_stub = """available_modules.append("quit")
