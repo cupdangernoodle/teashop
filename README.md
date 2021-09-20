@@ -36,6 +36,3 @@ This was created to be used as a training aid for my students.
 ### Additional Notes
 
 1. The number of cycles ran (one cycle is two Feistel rounds) is based on the Unicode value of the first character in the password. I did this because I wanted an easy way to change how many cycles are ran without needing to add another argument. The recommended amount of cycles is 32, and luckily the lowest character likely to be used as the first character in a key is !, which has a code of 33.
-
-2. From a forensics standpoint, there is a flaw with teatags and teaboxes. During transport they are encrypted, however they do write the executable code on target when they are executed. When the temp file that is being executed is cleaned up, it is not shreded. That means it should be relatively easy to recover with basic digital forensics tools/knowldege. I know the shred command exists, but I would consider it non-standard. I will probably add the ability to shred the temp file later, but for now my students don't have the ability to forensically analyze the disk.
-
